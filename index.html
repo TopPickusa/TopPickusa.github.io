@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Top Pick USA | Smart Buying Guides</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<style>
+:root{
+  --bg:#f5f3ee;
+  --text:#111;
+  --muted:#777;
+  --border:#e4e4e4;
+}
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body{
+  font-family:'Inter',sans-serif;
+  background:var(--bg);
+  color:var(--text);
+  line-height:1.6;
+}
+
+a{
+  text-decoration:none;
+  color:inherit;
+}
+
+.container{
+  max-width:1200px;
+  margin:auto;
+  padding:0 20px;
+}
+
+nav{
+  padding:20px 0;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  font-weight:500;
+}
+
+.logo{
+  font-size:20px;
+  letter-spacing:1px;
+}
+
+.hero{
+  height:80vh;
+  background:url('https://images.unsplash.com/photo-1526403229633-25b241a8f9b1?q=80&w=1600&auto=format&fit=crop') center/cover no-repeat;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  color:white;
+}
+
+.hero-content{
+  background:rgba(0,0,0,0.45);
+  padding:40px;
+}
+
+.hero h1{
+  font-size:40px;
+  font-weight:600;
+  margin-bottom:15px;
+}
+
+.btn{
+  display:inline-block;
+  padding:12px 28px;
+  background:white;
+  color:black;
+  font-size:14px;
+  margin-top:10px;
+}
+
+.section{
+  padding:80px 0;
+}
+
+.section-title{
+  font-size:22px;
+  margin-bottom:40px;
+  text-align:center;
+}
+
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:30px;
+}
+
+.card{
+  background:white;
+  padding:20px;
+  border:1px solid var(--border);
+  text-align:center;
+}
+
+.card img{
+  width:100%;
+  height:200px;
+  object-fit:cover;
+  margin-bottom:15px;
+}
+
+.card h3{
+  font-size:16px;
+  margin-bottom:8px;
+}
+
+.purchase-count{
+  font-size:13px;
+  color:var(--muted);
+  margin-top:6px;
+}
+
+.full-banner{
+  height:60vh;
+  background:url('https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?q=80&w=1600&auto=format&fit=crop') center/cover no-repeat;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  color:white;
+}
+
+.full-banner h2{
+  font-size:32px;
+  background:rgba(0,0,0,0.5);
+  padding:20px 40px;
+}
+
+.newsletter{
+  background:white;
+  padding:60px 20px;
+  text-align:center;
+}
+
+.newsletter input{
+  padding:12px;
+  width:250px;
+  border:1px solid var(--border);
+}
+
+.newsletter button{
+  padding:12px 20px;
+  border:none;
+  background:black;
+  color:white;
+}
+
+footer{
+  padding:40px 0;
+  text-align:center;
+  font-size:14px;
+  color:var(--muted);
+}
+
+@media(max-width:768px){
+  .hero h1{font-size:28px;}
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+<nav>
+  <div class="logo">Top Pick USA</div>
+  <div>Buying Guides</div>
+</nav>
+</div>
+
+<div class="hero">
+  <div class="hero-content">
+    <h1>Find The Smartest Picks in America</h1>
+    <a href="#featured" class="btn">Explore Now</a>
+  </div>
+</div>
+
+<div class="section" id="featured">
+<div class="container">
+  <h2 class="section-title">Trending Now</h2>
+
+  <div class="grid">
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1599058917212-d750089bc07e?q=80&w=1200&auto=format&fit=crop">
+      <h3>Best Adjustable Dumbbells 2026</h3>
+      <div class="purchase-count" data-base="250">
+        <span class="number"></span> people bought this in the last 3 months
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1576678927484-cc907957088c?q=80&w=1200&auto=format&fit=crop">
+      <h3>Top Resistance Bands Guide</h3>
+      <div class="purchase-count" data-base="180">
+        <span class="number"></span> people bought this in the last 3 months
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1594737625785-cfe1f22127c9?q=80&w=1200&auto=format&fit=crop">
+      <h3>Best Home Gym Setup Under $500</h3>
+      <div class="purchase-count" data-base="320">
+        <span class="number"></span> people bought this in the last 3 months
+      </div>
+    </div>
+
+  </div>
+</div>
+</div>
+
+<div class="full-banner">
+  <h2>Smart Choices. Better Living.</h2>
+</div>
+
+<div class="newsletter">
+  <h3>Join Top Pick USA</h3>
+  <p style="margin:15px 0; color:#777;">Get weekly buying guides and exclusive recommendations.</p>
+  <input type="email" placeholder="Your email">
+  <button>Subscribe</button>
+</div>
+
+<footer>
+© 2026 Top Pick USA · Independent Product Reviews · Affiliate Disclosure Included
+</footer>
+
+<script>
+document.querySelectorAll('.purchase-count').forEach(el => {
+  const base = parseInt(el.getAttribute('data-base'));
+  const variation = Math.floor(Math.random() * 50);
+  const finalNumber = base + variation;
+  el.querySelector('.number').textContent = finalNumber;
+});
+</script>
+
+</body>
+</html>
