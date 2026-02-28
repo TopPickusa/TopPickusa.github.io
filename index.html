@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -6,92 +7,605 @@
 <title>The Best Products. Period. | FitHome</title>
 <meta name="description" content="FitHome finds the best products on Amazon so you don't have to. Real picks, real results, zero fluff.">
 <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;500;600;700;800&family=Barlow+Condensed:wght@600;700;800&display=swap" rel="stylesheet">
-
 <style>
-* { margin:0!important; padding:0!important; box-sizing:border-box!important; }
-
-body {
-background:#ffffff!important;
-color:#111111!important;
-font-family:'Barlow',sans-serif!important;
-font-weight:400!important;
-line-height:1.6!important;
--webkit-font-smoothing:antialiased!important;
+* {
+  margin: 0 !important;
+  padding: 0 !important;
+  box-sizing: border-box !important;
 }
 
-/* PRODUCT IMAGE FIX */
+body {
+background: #ffffff !important;
+color: #111111 !important;
+font-family: ‘Barlow’, sans-serif !important;
+font-weight: 400 !important;
+line-height: 1.6 !important;
+-webkit-font-smoothing: antialiased !important;
+}
+
+/* ── VISITOR BAR ── */
+.fh-visitor-bar {
+background: #111111 !important;
+padding: 8px 2rem !important;
+display: flex !important;
+align-items: center !important;
+justify-content: center !important;
+gap: 10px !important;
+font-size: 0.7rem !important;
+color: #aaaaaa !important;
+letter-spacing: 2px !important;
+text-transform: uppercase !important;
+}
+
+.fh-live-dot {
+width: 6px !important;
+height: 6px !important;
+background: #4ade80 !important;
+border-radius: 50% !important;
+flex-shrink: 0 !important;
+animation: fhBlink 2s infinite !important;
+display: inline-block !important;
+}
+
+@keyframes fhBlink {
+0%, 100% { opacity: 1; transform: scale(1); }
+50%       { opacity: 0.3; transform: scale(0.7); }
+}
+
+#fh-visitor-count {
+color: #ffffff !important;
+font-weight: 700 !important;
+font-size: 0.75rem !important;
+}
+
+/* ── NAV ── */
+.fh-nav {
+background: #ffffff !important;
+border-bottom: 1px solid #eeeeee !important;
+padding: 0 2rem !important;
+display: flex !important;
+align-items: center !important;
+justify-content: space-between !important;
+height: 60px !important;
+position: sticky !important;
+top: 0 !important;
+z-index: 100 !important;
+}
+
+.fh-logo {
+font-family: ‘Barlow Condensed’, sans-serif !important;
+font-size: 1.6rem !important;
+font-weight: 800 !important;
+letter-spacing: 1px !important;
+color: #111111 !important;
+text-transform: uppercase !important;
+}
+
+.fh-nav-links {
+display: flex !important;
+gap: 2rem !important;
+list-style: none !important;
+}
+
+.fh-nav-links li a {
+font-size: 0.75rem !important;
+font-weight: 600 !important;
+letter-spacing: 1.5px !important;
+text-transform: uppercase !important;
+color: #555555 !important;
+text-decoration: none !important;
+}
+
+.fh-nav-links li a:hover {
+color: #111111 !important;
+}
+
+/* ── HERO BANNER ── */
+.fh-hero-banner {
+background: #f5f5f5 !important;
+padding: 5rem 2rem !important;
+text-align: center !important;
+border-bottom: 1px solid #eeeeee !important;
+}
+
+.fh-hero-eyebrow {
+font-size: 0.7rem !important;
+font-weight: 600 !important;
+letter-spacing: 3px !important;
+text-transform: uppercase !important;
+color: #888888 !important;
+margin-bottom: 1rem !important;
+display: block !important;
+}
+
+.fh-hero-banner h1 {
+font-family: ‘Barlow Condensed’, sans-serif !important;
+font-size: clamp(2.5rem, 6vw, 4.5rem) !important;
+font-weight: 800 !important;
+text-transform: uppercase !important;
+letter-spacing: -0.5px !important;
+line-height: 1 !important;
+color: #111111 !important;
+margin-bottom: 1.2rem !important;
+}
+
+.fh-hero-banner h1 span {
+color: #e05c00 !important;
+}
+
+.fh-hero-sub {
+font-size: 1rem !important;
+color: #666666 !important;
+max-width: 520px !important;
+margin: 0 auto !important;
+font-weight: 400 !important;
+line-height: 1.7 !important;
+}
+
+.fh-hero-meta {
+display: flex !important;
+align-items: center !important;
+justify-content: center !important;
+gap: 1.5rem !important;
+margin-top: 1.5rem !important;
+font-size: 0.72rem !important;
+color: #aaaaaa !important;
+letter-spacing: 1.5px !important;
+text-transform: uppercase !important;
+}
+
+.fh-hero-meta span.sep { color: #dddddd !important; }
+
+/* ── DISCLOSURE ── */
+.fh-disclosure {
+background: #fffaf5 !important;
+border-top: 1px solid #f0e8df !important;
+border-bottom: 1px solid #f0e8df !important;
+padding: 0.8rem 2rem !important;
+font-size: 0.75rem !important;
+color: #999999 !important;
+text-align: center !important;
+}
+
+.fh-disclosure strong { color: #555555 !important; }
+
+/* ── SECTION LABEL ── */
+.fh-section-label {
+padding: 2.5rem 2rem 0 !important;
+max-width: 1100px !important;
+margin: 0 auto !important;
+}
+
+.fh-section-label h2 {
+font-family: ‘Barlow Condensed’, sans-serif !important;
+font-size: 1.1rem !important;
+font-weight: 700 !important;
+letter-spacing: 3px !important;
+text-transform: uppercase !important;
+color: #111111 !important;
+border-bottom: 2px solid #111111 !important;
+padding-bottom: 0.6rem !important;
+display: inline-block !important;
+}
+
+/* ── PRODUCTS GRID ── */
+.fh-products {
+max-width: 1100px !important;
+margin: 0 auto !important;
+padding: 2rem 2rem 4rem !important;
+display: flex !important;
+flex-direction: column !important;
+gap: 0 !important;
+}
+
+/* ── PRODUCT CARD ── */
+.fh-product-card {
+display: grid !important;
+grid-template-columns: 1fr 1fr !important;
+gap: 0 !important;
+border-bottom: 1px solid #eeeeee !important;
+padding: 3rem 0 !important;
+animation: fhFadeUp 0.6s ease both !important;
+}
+
+.fh-product-card:nth-child(1) { animation-delay: 0.05s !important; }
+.fh-product-card:nth-child(2) { animation-delay: 0.1s !important; }
+.fh-product-card:nth-child(3) { animation-delay: 0.15s !important; }
+.fh-product-card:nth-child(4) { animation-delay: 0.2s !important; }
+.fh-product-card:nth-child(5) { animation-delay: 0.25s !important; }
+
+/* Alternate image left/right */
+.fh-product-card:nth-child(even) .fh-card-image { order: 1 !important; }
+.fh-product-card:nth-child(even) .fh-card-content { order: 2 !important; }
+
+/* ── CARD IMAGE ── */
 .fh-card-image {
-background:#ffffff!important;
-display:flex!important;
-align-items:center!important;
-justify-content:center!important;
-height:340px!important;
-overflow:hidden!important;
-position:relative!important;
+background: #f7f7f7 !important;
+display: flex !important;
+align-items: center !important;
+justify-content: center !important;
+min-height: 340px !important;
+overflow: hidden !important;
+position: relative !important;
 }
 
 .fh-card-image img {
-width:100%!important;
-height:100%!important;
-object-fit:contain!important;
-display:block!important;
-transition:transform .5s ease!important;
+width: 100% !important;
+height: 340px !important;
+object-fit: cover !important;
+display: block !important;
+transition: transform 0.5s ease !important;
 }
 
 .fh-product-card:hover .fh-card-image img {
-transform:scale(1.03)!important;
+transform: scale(1.03) !important;
+}
+
+.fh-img-placeholder {
+width: 100% !important;
+height: 340px !important;
+background: #f2f2f2 !important;
+display: flex !important;
+flex-direction: column !important;
+align-items: center !important;
+justify-content: center !important;
+gap: 12px !important;
+}
+
+.fh-placeholder-emoji {
+font-size: 3rem !important;
+opacity: 0.25 !important;
+}
+
+.fh-placeholder-label {
+font-size: 0.65rem !important;
+letter-spacing: 2px !important;
+text-transform: uppercase !important;
+color: #bbbbbb !important;
+text-align: center !important;
+padding: 0 1rem !important;
+}
+
+.fh-rank-badge {
+position: absolute !important;
+top: 1.2rem !important;
+left: 1.2rem !important;
+background: #111111 !important;
+color: #ffffff !important;
+font-family: ‘Barlow Condensed’, sans-serif !important;
+font-size: 0.7rem !important;
+font-weight: 700 !important;
+letter-spacing: 2px !important;
+text-transform: uppercase !important;
+padding: 4px 10px !important;
+}
+
+/* ── CARD CONTENT ── */
+.fh-card-content {
+padding: 2.5rem 3rem !important;
+display: flex !important;
+flex-direction: column !important;
+justify-content: center !important;
+gap: 0 !important;
+}
+
+.fh-product-label {
+font-size: 0.65rem !important;
+font-weight: 700 !important;
+letter-spacing: 2.5px !important;
+text-transform: uppercase !important;
+color: #e05c00 !important;
+margin-bottom: 0.5rem !important;
+display: block !important;
+}
+
+.fh-card-content h2 {
+font-family: ‘Barlow Condensed’, sans-serif !important;
+font-size: 2.2rem !important;
+font-weight: 800 !important;
+text-transform: uppercase !important;
+letter-spacing: 0.5px !important;
+color: #111111 !important;
+line-height: 1.05 !important;
+margin-bottom: 1rem !important;
+}
+
+.fh-card-content p {
+font-size: 0.9rem !important;
+color: #666666 !important;
+line-height: 1.75 !important;
+margin-bottom: 1.2rem !important;
+max-width: 400px !important;
+}
+
+.fh-tags {
+display: flex !important;
+flex-wrap: wrap !important;
+gap: 0.4rem !important;
+margin-bottom: 1.5rem !important;
+}
+
+.fh-tag {
+font-size: 0.65rem !important;
+font-weight: 600 !important;
+letter-spacing: 1px !important;
+text-transform: uppercase !important;
+color: #777777 !important;
+border: 1px solid #dddddd !important;
+padding: 3px 10px !important;
+background: #ffffff !important;
+}
+
+.fh-price-row {
+display: flex !important;
+align-items: center !important;
+gap: 1rem !important;
+margin-bottom: 1.2rem !important;
+}
+
+.fh-price-from {
+font-size: 0.65rem !important;
+font-weight: 600 !important;
+letter-spacing: 1px !important;
+text-transform: uppercase !important;
+color: #aaaaaa !important;
+}
+
+.fh-price {
+font-family: ‘Barlow Condensed’, sans-serif !important;
+font-size: 2rem !important;
+font-weight: 800 !important;
+color: #111111 !important;
+line-height: 1 !important;
+}
+
+.fh-buy-btn {
+display: inline-block !important;
+background: #111111 !important;
+color: #ffffff !important;
+font-family: ‘Barlow’, sans-serif !important;
+font-weight: 700 !important;
+font-size: 0.72rem !important;
+letter-spacing: 2px !important;
+text-transform: uppercase !important;
+padding: 13px 28px !important;
+text-decoration: none !important;
+transition: background 0.2s !important;
+align-self: flex-start !important;
+}
+
+.fh-buy-btn:hover {
+background: #e05c00 !important;
+color: #ffffff !important;
+text-decoration: none !important;
+}
+
+.fh-amazon-note {
+font-size: 0.62rem !important;
+color: #bbbbbb !important;
+letter-spacing: 0.5px !important;
+margin-top: 0.5rem !important;
+display: block !important;
+}
+
+/* ── TIPS ── */
+.fh-tips-section {
+background: #f5f5f5 !important;
+border-top: 1px solid #eeeeee !important;
+padding: 3rem 2rem !important;
+text-align: center !important;
+}
+
+.fh-tips-section h3 {
+font-family: ‘Barlow Condensed’, sans-serif !important;
+font-size: 1.8rem !important;
+font-weight: 800 !important;
+text-transform: uppercase !important;
+color: #111111 !important;
+margin-bottom: 0.8rem !important;
+}
+
+.fh-tips-section p {
+font-size: 0.88rem !important;
+color: #777777 !important;
+max-width: 560px !important;
+margin: 0 auto !important;
+line-height: 1.75 !important;
+}
+
+/* ── FOOTER ── */
+.fh-footer {
+background: #111111 !important;
+padding: 2rem !important;
+display: flex !important;
+justify-content: space-between !important;
+align-items: center !important;
+font-size: 0.7rem !important;
+color: #666666 !important;
+letter-spacing: 1px !important;
+text-transform: uppercase !important;
+flex-wrap: wrap !important;
+gap: 1rem !important;
+}
+
+.fh-footer-logo {
+font-family: ‘Barlow Condensed’, sans-serif !important;
+font-size: 1.2rem !important;
+font-weight: 800 !important;
+color: #ffffff !important;
+letter-spacing: 2px !important;
+text-transform: uppercase !important;
+}
+
+/* ── ANIMATION ── */
+@keyframes fhFadeUp {
+from { opacity: 0; transform: translateY(20px); }
+to   { opacity: 1; transform: translateY(0); }
+}
+
+/* ── RESPONSIVE ── */
+@media (max-width: 768px) {
+.fh-product-card {
+grid-template-columns: 1fr !important;
+}
+.fh-product-card:nth-child(even) .fh-card-image { order: 0 !important; }
+.fh-product-card:nth-child(even) .fh-card-content { order: 1 !important; }
+.fh-card-content {
+padding: 1.5rem !important;
+}
+.fh-nav-links { display: none !important; }
+.fh-hero-banner { padding: 3rem 1.5rem !important; }
+.fh-card-image img,
+.fh-img-placeholder { height: 260px !important; }
 }
 </style>
+
 </head>
 <body>
 
+<!-- VISITOR BAR -->
+
+<div class="fh-visitor-bar">
+  <div class="fh-live-dot"></div>
+  <span id="fh-visitor-count">143</span>
+  <span>&nbsp;people reading this right now</span>
+</div>
+
+<!-- NAV -->
+
+<div class="fh-nav">
+  <div class="fh-logo">FitHome</div>
+  <ul class="fh-nav-links">
+    <li><a href="#">Reviews</a></li>
+    <li><a href="#">Guides</a></li>
+    <li><a href="#">About</a></li>
+  </ul>
+</div>
+
+<!-- HERO -->
+
+<div class="fh-hero-banner">
+  <span class="fh-hero-eyebrow">Amazon &middot; Handpicked &middot; 2026</span>
+  <h1>The Best Products.<br><span>Period.</span></h1>
+  <p class="fh-hero-sub">
+    We find the best products on Amazon so you don&#39;t have to. No fluff, no filler &mdash; just the top picks that are actually worth your money.
+  </p>
+  <div class="fh-hero-meta">
+    <span>By FitHome Staff</span>
+    <span class="sep">/</span>
+    <span>February 2026</span>
+    <span class="sep">/</span>
+    <span>8 min read</span>
+  </div>
+</div>
+
+<!-- DISCLOSURE -->
+
+<div class="fh-disclosure">
+  <strong>Affiliate Disclosure:</strong> This post contains Amazon affiliate links. If you purchase through our links, we may earn a small commission at no extra cost to you.
+</div>
+
+<!-- SECTION LABEL -->
+
+<div class="fh-section-label">
+  <h2>This Week&#39;s Top Picks</h2>
+</div>
+
+<!-- PRODUCTS -->
+
 <div class="fh-products">
 
-<!-- PRODUCT 1 -->
+  <!-- PRODUCT 1 -->
 
-<div class="fh-product-card">
-  <div class="fh-card-image">
-    <div class="fh-rank-badge">01 &mdash; Best Overall</div>
-
-    <img
-      src="WhatsApp Image 2026-02-28 at 3.58.12 PM.jpeg"
-      alt="Stanley Quencher H2.0 FlowState 40 oz Stainless Steel Tumbler"
-    />
+  <div class="fh-product-card">
+    <div class="fh-card-image">
+      <div class="fh-rank-badge">01 &mdash; Best Overall</div>
+      <!-- REPLACE src with your dumbbell image URL -->
+      <img
+        src="WhatsApp Image 2026-02-28 at 3.58.12 PM.jpeg"
+        alt="STANLY Quencher H2.0 FlowState Stainless Steel
+"
+        onerror="this.style.display='none';this.nextElementSibling.style.display='flex';"
+      />
+      <div class="fh-img-placeholder" style="display:none;">
+        <div class="fh-placeholder-emoji">🏋️</div>
+        <div class="fh-placeholder-label">Add your dumbbell photo here<br>Replace src above with image URL</div>
+      </div>
+    </div>
+    <div class="fh-card-content">
+      <span class="fh-product-label">Best Overall &middot; Most Searched</span>
+      <h2>Adjustable Dumbbell Set</h2>
+      <p>
+       
+      </p>
+      <div class="fh-tags">
+        <span class="fh-tag">16 hour cold </span>
+        <span class="fh-tag">best for travel</span>
+        <span class="fh-tag">bpa free</span>
+        <span class="fh-tag">stainless steel</span>
+      </div>
+      <div class="fh-price-row">
+        <span class="fh-price-from">From</span>
+        <span class="fh-price">$35</span>
+      </div>
+      <a href="https://amzn.to/3OEES4p" class="fh-buy-btn" target="_blank" rel="nofollow sponsored">View on Amazon</a>
+      <span class="fh-amazon-note">via Amazon Associates</span>
+    </div>
   </div>
 
-  <div class="fh-card-content">
-    <span class="fh-product-label">Best Overall &middot; Most Searched</span>
+<!-- TIPS -->
 
-    <h2>Stanley Quencher H2.0 FlowState 40 oz Stainless Steel Tumbler</h2>
-
-    <p>
-      The Stanley Quencher H2.0 FlowState 40 oz Tumbler is a premium insulated stainless steel travel mug designed to keep drinks ice-cold for hours. Built with a durable comfort-grip handle and reusable straw lid, it fits most car cup holders and is perfect for daily hydration, travel, gym, and office use.
-    </p>
-
-    <div class="fh-tags">
-      <span class="fh-tag">All-Day Cold Retention</span>
-      <span class="fh-tag">Premium Stainless Steel</span>
-      <span class="fh-tag">Leak-Resistant Lid</span>
-      <span class="fh-tag">40 oz Capacity</span>
-    </div>
-
-    <div class="fh-price-row">
-      <span class="fh-price-from">From</span>
-      <span class="fh-price">$35</span>
-    </div>
-
-    <a href="https://amzn.to/4u20Qi2"
-       class="fh-buy-btn"
-       target="_blank"
-       rel="nofollow sponsored">
-       View on Amazon
-    </a>
-
-    <span class="fh-amazon-note">via Amazon Associates</span>
-  </div>
+<div class="fh-tips-section">
+  <h3>How Our Links Work</h3>
+  <p>
+    Every product link goes to Amazon.com. Replace <strong style="color:#111111;">YOUR-ASSOCIATE-ID</strong> with your Amazon Associates tracking ID. Every click that leads to a purchase earns you a commission &mdash; even if they buy something completely different!
+  </p>
 </div>
 
+<!-- FOOTER -->
+
+<div class="fh-footer">
+  <div class="fh-footer-logo">FitHome</div>
+  <div>&#169; 2026 FitHome Reviews &middot; Amazon Associates participant</div>
 </div>
+
+<!-- VISITOR COUNTER -->
+
+<script type='text/javascript'>
+//<![CDATA[
+  function fhGetBase() {
+    var seed = Math.floor(Date.now() / (90 * 60 * 1000));
+    var r = ((seed * 1664525 + 1013904223) & 0xffffffff) >>> 0;
+    return 80 + (r % 140);
+  }
+  function fhGetReal() {
+    try {
+      var key = 'fh_vis';
+      var win = 90 * 60 * 1000;
+      var now = Date.now();
+      var d = JSON.parse(localStorage.getItem(key) || '{"v":[],"id":null}');
+      if (!d.id) d.id = now + '_' + Math.random().toString(36).substr(2, 6);
+      d.v = d.v.filter(function(x) { return now - x.t < win; });
+      var i = d.v.findIndex(function(x) { return x.id === d.id; });
+      if (i >= 0) { d.v[i].t = now; } else { d.v.push({ id: d.id, t: now }); }
+      localStorage.setItem(key, JSON.stringify(d));
+      return d.v.length;
+    } catch(e) { return 1; }
+  }
+  function fhSetCount(n) {
+    var el = document.getElementById('fh-visitor-count');
+    if (el) el.textContent = n;
+  }
+  function fhUpdate() { fhSetCount(fhGetBase() + fhGetReal()); }
+  fhUpdate();
+  setInterval(fhUpdate, 30000);
+  (function fhFlicker() {
+    var wobble = Math.floor(Math.random() * 7) - 3;
+    fhSetCount(Math.max(fhGetBase() + fhGetReal() + wobble, 1));
+    setTimeout(fhFlicker, 8000 + Math.random() * 8000);
+  })();
+//]]>
+</script>
 
 </body>
 </html>
