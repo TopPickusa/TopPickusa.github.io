@@ -1,248 +1,595 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Top Pick USA | Smart Buying Guides</title>
-
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
-
+<title>5 Best Home Fitness Equipment Picks of 2026 | FitHome Reviews</title>
+<meta name="description" content="Looking for the best home gym equipment? We reviewed the top 5 must-have fitness tools that actually deliver results — with links to grab them on Amazon.">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@300;400;500;700&display=swap" rel="stylesheet">
 <style>
-:root{
-  --bg:#f5f3ee;
-  --text:#111;
-  --muted:#777;
-  --border:#e4e4e4;
+* {
+  margin: 0 !important;
+  padding: 0 !important;
+  box-sizing: border-box !important;
 }
 
-*{
-  margin:0;
-  padding:0;
-  box-sizing:border-box;
+body {
+background: #0a0a0a !important;
+color: #f5f3ee !important;
+font-family: ‘DM Sans’, sans-serif !important;
+font-weight: 300 !important;
+line-height: 1.7 !important;
 }
 
-body{
-  font-family:'Inter',sans-serif;
-  background:var(--bg);
-  color:var(--text);
-  line-height:1.6;
+/* VISITOR BAR */
+.fh-visitor-bar {
+background: #111111 !important;
+border-bottom: 1px solid #1e1e1e !important;
+padding: 9px 4rem !important;
+display: flex !important;
+align-items: center !important;
+gap: 10px !important;
+font-size: 0.72rem !important;
+color: #888888 !important;
+letter-spacing: 1.5px !important;
+text-transform: uppercase !important;
 }
 
-a{
-  text-decoration:none;
-  color:inherit;
+.fh-live-dot {
+width: 7px !important;
+height: 7px !important;
+background: #4ade80 !important;
+border-radius: 50% !important;
+flex-shrink: 0 !important;
+animation: fhBlink 2s infinite !important;
+display: inline-block !important;
 }
 
-.container{
-  max-width:1200px;
-  margin:auto;
-  padding:0 20px;
+@keyframes fhBlink {
+0%, 100% { opacity: 1; transform: scale(1); }
+50%       { opacity: 0.3; transform: scale(0.7); }
 }
 
-nav{
-  padding:20px 0;
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-  font-weight:500;
+#fh-visitor-count {
+color: #e8ff47 !important;
+font-family: ‘Bebas Neue’, sans-serif !important;
+font-size: 1rem !important;
+letter-spacing: 2px !important;
 }
 
-.logo{
-  font-size:20px;
-  letter-spacing:1px;
+/* NAV */
+.fh-nav {
+display: flex !important;
+justify-content: space-between !important;
+align-items: center !important;
+padding: 1.2rem 4rem !important;
+border-bottom: 1px solid #222222 !important;
+position: sticky !important;
+top: 0 !important;
+background: rgba(10,10,10,0.95) !important;
+backdrop-filter: blur(8px) !important;
+-webkit-backdrop-filter: blur(8px) !important;
+z-index: 100 !important;
 }
 
-.hero{
-  height:80vh;
-  background:url('https://images.unsplash.com/photo-1526403229633-25b241a8f9b1?q=80&w=1600&auto=format&fit=crop') center/cover no-repeat;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  text-align:center;
-  color:white;
+.fh-logo {
+font-family: ‘Bebas Neue’, sans-serif !important;
+font-size: 1.8rem !important;
+letter-spacing: 2px !important;
+color: #e8ff47 !important;
 }
 
-.hero-content{
-  background:rgba(0,0,0,0.45);
-  padding:40px;
+.fh-nav-tag {
+font-size: 0.75rem !important;
+color: #888888 !important;
+letter-spacing: 2px !important;
+text-transform: uppercase !important;
 }
 
-.hero h1{
-  font-size:40px;
-  font-weight:600;
-  margin-bottom:15px;
+/* HERO */
+.fh-hero {
+padding: 5rem 4rem 3rem !important;
+max-width: 900px !important;
+animation: fhFadeUp 0.8s ease both !important;
 }
 
-.btn{
-  display:inline-block;
-  padding:12px 28px;
-  background:white;
-  color:black;
-  font-size:14px;
-  margin-top:10px;
+.fh-category-tag {
+display: inline-block !important;
+background: #e8ff47 !important;
+color: #0a0a0a !important;
+font-size: 0.7rem !important;
+font-weight: 700 !important;
+letter-spacing: 3px !important;
+text-transform: uppercase !important;
+padding: 4px 12px !important;
+margin-bottom: 1.5rem !important;
 }
 
-.section{
-  padding:80px 0;
+.fh-hero h1 {
+font-family: ‘Bebas Neue’, sans-serif !important;
+font-size: clamp(3rem, 7vw, 6rem) !important;
+line-height: 1 !important;
+letter-spacing: 1px !important;
+margin-bottom: 1.5rem !important;
+color: #f5f3ee !important;
 }
 
-.section-title{
-  font-size:22px;
-  margin-bottom:40px;
-  text-align:center;
+.fh-hero h1 span {
+color: #e8ff47 !important;
 }
 
-.grid{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-  gap:30px;
+.fh-hero-meta {
+display: flex !important;
+gap: 2rem !important;
+font-size: 0.8rem !important;
+color: #888888 !important;
+letter-spacing: 1px !important;
+text-transform: uppercase !important;
+margin-bottom: 2rem !important;
 }
 
-.card{
-  background:white;
-  padding:20px;
-  border:1px solid var(--border);
-  text-align:center;
+.fh-hero-intro {
+font-size: 1.1rem !important;
+color: #bbbbbb !important;
+max-width: 650px !important;
+border-left: 3px solid #e8ff47 !important;
+padding-left: 1.5rem !important;
 }
 
-.card img{
-  width:100%;
-  height:200px;
-  object-fit:cover;
-  margin-bottom:15px;
+/* DISCLOSURE */
+.fh-disclosure {
+margin: 0 4rem 2rem !important;
+padding: 0.8rem 1.2rem !important;
+background: #161616 !important;
+border: 1px solid #2a2a2a !important;
+font-size: 0.78rem !important;
+color: #888888 !important;
 }
 
-.card h3{
-  font-size:16px;
-  margin-bottom:8px;
+.fh-disclosure strong {
+color: #f5f3ee !important;
 }
 
-.purchase-count{
-  font-size:13px;
-  color:var(--muted);
-  margin-top:6px;
+/* DIVIDER */
+.fh-divider {
+margin: 0 4rem 3rem !important;
+border: none !important;
+border-top: 1px solid #222222 !important;
 }
 
-.full-banner{
-  height:60vh;
-  background:url('https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?q=80&w=1600&auto=format&fit=crop') center/cover no-repeat;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  text-align:center;
-  color:white;
+/* PRODUCTS */
+.fh-products {
+padding: 0 4rem !important;
+display: flex !important;
+flex-direction: column !important;
+gap: 0 !important;
 }
 
-.full-banner h2{
-  font-size:32px;
-  background:rgba(0,0,0,0.5);
-  padding:20px 40px;
+.fh-product-card {
+display: grid !important;
+grid-template-columns: 80px 1fr auto !important;
+gap: 2rem !important;
+align-items: start !important;
+padding: 2.5rem 0 !important;
+border-bottom: 1px solid #1e1e1e !important;
+animation: fhFadeUp 0.6s ease both !important;
 }
 
-.newsletter{
-  background:white;
-  padding:60px 20px;
-  text-align:center;
+.fh-product-card:nth-child(1) { animation-delay: 0.1s !important; }
+.fh-product-card:nth-child(2) { animation-delay: 0.2s !important; }
+.fh-product-card:nth-child(3) { animation-delay: 0.3s !important; }
+.fh-product-card:nth-child(4) { animation-delay: 0.4s !important; }
+.fh-product-card:nth-child(5) { animation-delay: 0.5s !important; }
+
+.fh-rank {
+font-family: ‘Bebas Neue’, sans-serif !important;
+font-size: 5rem !important;
+color: #1e1e1e !important;
+line-height: 1 !important;
+text-align: center !important;
+transition: color 0.3s !important;
 }
 
-.newsletter input{
-  padding:12px;
-  width:250px;
-  border:1px solid var(--border);
+.fh-product-card:hover .fh-rank {
+color: #e8ff47 !important;
 }
 
-.newsletter button{
-  padding:12px 20px;
-  border:none;
-  background:black;
-  color:white;
+.fh-product-info h2 {
+font-family: ‘Bebas Neue’, sans-serif !important;
+font-size: 2rem !important;
+letter-spacing: 1px !important;
+color: #f5f3ee !important;
+margin-bottom: 0.3rem !important;
 }
 
-footer{
-  padding:40px 0;
-  text-align:center;
-  font-size:14px;
-  color:var(--muted);
+.fh-product-subtitle {
+font-size: 0.75rem !important;
+text-transform: uppercase !important;
+letter-spacing: 2px !important;
+color: #e8ff47 !important;
+margin-bottom: 1rem !important;
 }
 
-@media(max-width:768px){
-  .hero h1{font-size:28px;}
+.fh-product-info p {
+font-size: 0.95rem !important;
+color: #999999 !important;
+max-width: 580px !important;
+margin-bottom: 1rem !important;
+}
+
+.fh-why-buy {
+display: flex !important;
+flex-wrap: wrap !important;
+gap: 0.5rem !important;
+}
+
+.fh-tag {
+background: #1a1a1a !important;
+border: 1px solid #333333 !important;
+font-size: 0.72rem !important;
+padding: 3px 10px !important;
+color: #aaaaaa !important;
+letter-spacing: 1px !important;
+}
+
+.fh-product-action {
+display: flex !important;
+flex-direction: column !important;
+align-items: flex-end !important;
+gap: 0.5rem !important;
+min-width: 160px !important;
+}
+
+.fh-price-label {
+font-size: 0.7rem !important;
+color: #888888 !important;
+text-transform: uppercase !important;
+letter-spacing: 1px !important;
+}
+
+.fh-price {
+font-family: ‘Bebas Neue’, sans-serif !important;
+font-size: 2rem !important;
+color: #f5f3ee !important;
+}
+
+.fh-buy-btn {
+display: inline-block !important;
+background: #e8ff47 !important;
+color: #0a0a0a !important;
+font-family: ‘DM Sans’, sans-serif !important;
+font-weight: 700 !important;
+font-size: 0.8rem !important;
+letter-spacing: 2px !important;
+text-transform: uppercase !important;
+padding: 12px 24px !important;
+text-decoration: none !important;
+transition: background 0.2s, transform 0.1s !important;
+white-space: nowrap !important;
+}
+
+.fh-buy-btn:hover {
+background: #ffffff !important;
+color: #0a0a0a !important;
+transform: translateY(-1px) !important;
+text-decoration: none !important;
+}
+
+.fh-amazon-note {
+font-size: 0.65rem !important;
+color: #555555 !important;
+text-align: right !important;
+}
+
+/* TIPS */
+.fh-tips-section {
+margin: 4rem 4rem 2rem !important;
+padding: 2.5rem !important;
+background: #0f0f0f !important;
+border: 1px solid #222222 !important;
+}
+
+.fh-tips-section h3 {
+font-family: ‘Bebas Neue’, sans-serif !important;
+font-size: 2rem !important;
+color: #e8ff47 !important;
+margin-bottom: 1rem !important;
+}
+
+.fh-tips-section p {
+color: #999999 !important;
+font-size: 0.95rem !important;
+max-width: 650px !important;
+}
+
+/* FOOTER */
+.fh-footer {
+margin-top: 4rem !important;
+padding: 2rem 4rem !important;
+border-top: 1px solid #1e1e1e !important;
+display: flex !important;
+justify-content: space-between !important;
+align-items: center !important;
+font-size: 0.75rem !important;
+color: #444444 !important;
+}
+
+/* ANIMATIONS */
+@keyframes fhFadeUp {
+from { opacity: 0; transform: translateY(20px); }
+to   { opacity: 1; transform: translateY(0); }
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+.fh-visitor-bar,
+.fh-nav,
+.fh-hero,
+.fh-products,
+.fh-footer {
+padding-left: 1.5rem !important;
+padding-right: 1.5rem !important;
+}
+.fh-disclosure,
+.fh-tips-section {
+margin-left: 1.5rem !important;
+margin-right: 1.5rem !important;
+padding-left: 1rem !important;
+padding-right: 1rem !important;
+}
+.fh-divider {
+margin-left: 1.5rem !important;
+margin-right: 1.5rem !important;
+}
+.fh-hero {
+padding-top: 3rem !important;
+}
+.fh-product-card {
+grid-template-columns: 50px 1fr !important;
+grid-template-rows: auto auto !important;
+}
+.fh-rank {
+font-size: 3rem !important;
+}
+.fh-product-action {
+grid-column: 2 !important;
+align-items: flex-start !important;
+}
 }
 </style>
-</head>
 
+</head>
 <body>
 
-<div class="container">
-<nav>
-  <div class="logo">Top Pick USA</div>
-  <div>Buying Guides</div>
-</nav>
+<!-- VISITOR BAR -->
+
+<div class="fh-visitor-bar">
+  <div class="fh-live-dot"></div>
+  <span id="fh-visitor-count">143</span>
+  <span>people reading this right now</span>
 </div>
 
-<div class="hero">
-  <div class="hero-content">
-    <h1>Find The Smartest Picks in America</h1>
-    <a href="#featured" class="btn">Explore Now</a>
+<!-- NAV -->
+
+<div class="fh-nav">
+  <div class="fh-logo">FitHome</div>
+  <div class="fh-nav-tag">Affiliate Reviews</div>
+</div>
+
+<!-- HERO -->
+
+<div class="fh-hero">
+  <div class="fh-category-tag">Home Fitness &middot; 2026</div>
+  <h1>5 Best Home <span>Gym Picks</span> That Actually Work</h1>
+  <div class="fh-hero-meta">
+    <span>By FitHome Staff</span>
+    <span>February 2026</span>
+    <span>8 min read</span>
   </div>
+  <p class="fh-hero-intro">
+    You don&#39;t need a $200/month gym membership. These 5 Amazon bestsellers will build a complete home gym &mdash; without wasting money on equipment that collects dust.
+  </p>
 </div>
 
-<div class="section" id="featured">
-<div class="container">
-  <h2 class="section-title">Trending Now</h2>
+<!-- DISCLOSURE -->
 
-  <div class="grid">
+<div class="fh-disclosure">
+  <strong>Affiliate Disclosure:</strong> This post contains Amazon affiliate links. If you purchase through our links, we may earn a small commission at no extra cost to you. We only recommend products we genuinely believe in.
+</div>
 
-    <div class="card">
-      <img src="https://images.unsplash.com/photo-1599058917212-d750089bc07e?q=80&w=1200&auto=format&fit=crop">
-      <h3>Best Adjustable Dumbbells 2026</h3>
-      <div class="purchase-count" data-base="250">
-        <span class="number"></span> people bought this in the last 3 months
+<hr class="fh-divider" />
+
+<!-- PRODUCTS -->
+
+<div class="fh-products">
+
+  <!-- PRODUCT 1 -->
+
+  <div class="fh-product-card">
+    <div class="fh-rank">1</div>
+    <div class="fh-product-info">
+      <h2>Adjustable Dumbbell Set</h2>
+      <div class="fh-product-subtitle">Best Overall &middot; Most Searched</div>
+      <p>
+        Adjustable dumbbells are one of the most searched fitness terms on Amazon. A quality set replaces 15 pairs of traditional weights and fits neatly in a corner. Perfect for strength training, toning, and full-body workouts at any fitness level.
+      </p>
+      <div class="fh-why-buy">
+        <span class="fh-tag">Space-saving</span>
+        <span class="fh-tag">Beginner friendly</span>
+        <span class="fh-tag">All fitness levels</span>
+        <span class="fh-tag">High resale value</span>
       </div>
     </div>
-
-    <div class="card">
-      <img src="https://images.unsplash.com/photo-1576678927484-cc907957088c?q=80&w=1200&auto=format&fit=crop">
-      <h3>Top Resistance Bands Guide</h3>
-      <div class="purchase-count" data-base="180">
-        <span class="number"></span> people bought this in the last 3 months
-      </div>
+    <div class="fh-product-action">
+      <span class="fh-price-label">Starting at</span>
+      <span class="fh-price">$89</span>
+      <a href="https://www.amazon.com/s?k=adjustable+dumbbells&tag=YOUR-ASSOCIATE-ID" class="fh-buy-btn" target="_blank" rel="nofollow sponsored">View on Amazon</a>
+      <span class="fh-amazon-note">via Amazon Associates</span>
     </div>
-
-    <div class="card">
-      <img src="https://images.unsplash.com/photo-1594737625785-cfe1f22127c9?q=80&w=1200&auto=format&fit=crop">
-      <h3>Best Home Gym Setup Under $500</h3>
-      <div class="purchase-count" data-base="320">
-        <span class="number"></span> people bought this in the last 3 months
-      </div>
-    </div>
-
   </div>
-</div>
+
+  <!-- PRODUCT 2 -->
+
+  <div class="fh-product-card">
+    <div class="fh-rank">2</div>
+    <div class="fh-product-info">
+      <h2>Resistance Band Set</h2>
+      <div class="fh-product-subtitle">Best Budget Pick &middot; Top Seller</div>
+      <p>
+        Resistance bands are the #1 impulse fitness buy on Amazon &mdash; cheap, versatile, and easy to store. Great for home workouts, stretching, physical therapy, and travel. People searching home workout equipment almost always end up buying these.
+      </p>
+      <div class="fh-why-buy">
+        <span class="fh-tag">Under $30</span>
+        <span class="fh-tag">Great for beginners</span>
+        <span class="fh-tag">Travel friendly</span>
+        <span class="fh-tag">5 resistance levels</span>
+      </div>
+    </div>
+    <div class="fh-product-action">
+      <span class="fh-price-label">Starting at</span>
+      <span class="fh-price">$22</span>
+      <a href="https://www.amazon.com/s?k=resistance+bands+set&tag=YOUR-ASSOCIATE-ID" class="fh-buy-btn" target="_blank" rel="nofollow sponsored">View on Amazon</a>
+      <span class="fh-amazon-note">via Amazon Associates</span>
+    </div>
+  </div>
+
+  <!-- PRODUCT 3 -->
+
+  <div class="fh-product-card">
+    <div class="fh-rank">3</div>
+    <div class="fh-product-info">
+      <h2>Yoga &amp; Exercise Mat</h2>
+      <div class="fh-product-subtitle">Most Purchased Year-Round</div>
+      <p>
+        Exercise mats are a staple purchase for anyone setting up a home gym. They protect joints during floor workouts, yoga, pilates, and stretching. Thick, non-slip mats with carrying straps are the top-reviewed options and convert extremely well.
+      </p>
+      <div class="fh-why-buy">
+        <span class="fh-tag">Non-slip surface</span>
+        <span class="fh-tag">Joint protection</span>
+        <span class="fh-tag">Multi-purpose</span>
+        <span class="fh-tag">Easy to clean</span>
+      </div>
+    </div>
+    <div class="fh-product-action">
+      <span class="fh-price-label">Starting at</span>
+      <span class="fh-price">$35</span>
+      <a href="https://www.amazon.com/s?k=thick+exercise+yoga+mat&tag=YOUR-ASSOCIATE-ID" class="fh-buy-btn" target="_blank" rel="nofollow sponsored">View on Amazon</a>
+      <span class="fh-amazon-note">via Amazon Associates</span>
+    </div>
+  </div>
+
+  <!-- PRODUCT 4 -->
+
+  <div class="fh-product-card">
+    <div class="fh-rank">4</div>
+    <div class="fh-product-info">
+      <h2>Pull-Up Bar (Doorframe)</h2>
+      <div class="fh-product-subtitle">Best Upper Body Investment</div>
+      <p>
+        Best pull-up bar for home gets massive search volume and has high buyer intent. Doorframe pull-up bars require no installation and can be used for pull-ups, chin-ups, and hanging core exercises. A complete upper body gym in one $40 product.
+      </p>
+      <div class="fh-why-buy">
+        <span class="fh-tag">No tools needed</span>
+        <span class="fh-tag">300 lb capacity</span>
+        <span class="fh-tag">Multi-grip</span>
+        <span class="fh-tag">Easy setup</span>
+      </div>
+    </div>
+    <div class="fh-product-action">
+      <span class="fh-price-label">Starting at</span>
+      <span class="fh-price">$38</span>
+      <a href="https://www.amazon.com/s?k=doorframe+pull+up+bar&tag=YOUR-ASSOCIATE-ID" class="fh-buy-btn" target="_blank" rel="nofollow sponsored">View on Amazon</a>
+      <span class="fh-amazon-note">via Amazon Associates</span>
+    </div>
+  </div>
+
+  <!-- PRODUCT 5 -->
+
+  <div class="fh-product-card">
+    <div class="fh-rank">5</div>
+    <div class="fh-product-info">
+      <h2>Jump Rope (Speed)</h2>
+      <div class="fh-product-subtitle">Best Cardio Under $20</div>
+      <p>
+        Jump ropes are the most underrated cardio tool and a consistent Amazon bestseller in fitness. People search best jump rope for cardio and weighted jump rope year-round. Burns more calories than jogging and fits in a drawer.
+      </p>
+      <div class="fh-why-buy">
+        <span class="fh-tag">Burns 600+ cal/hr</span>
+        <span class="fh-tag">Adjustable length</span>
+        <span class="fh-tag">Compact storage</span>
+        <span class="fh-tag">Weighted options</span>
+      </div>
+    </div>
+    <div class="fh-product-action">
+      <span class="fh-price-label">Starting at</span>
+      <span class="fh-price">$14</span>
+      <a href="https://www.amazon.com/s?k=speed+jump+rope+weighted&tag=YOUR-ASSOCIATE-ID" class="fh-buy-btn" target="_blank" rel="nofollow sponsored">View on Amazon</a>
+      <span class="fh-amazon-note">via Amazon Associates</span>
+    </div>
+  </div>
+
 </div>
 
-<div class="full-banner">
-  <h2>Smart Choices. Better Living.</h2>
+<!-- TIPS -->
+
+<div class="fh-tips-section">
+  <h3>How to Use These Links</h3>
+  <p>
+    Replace <strong style="color:#e8ff47;">YOUR-ASSOCIATE-ID</strong> in each link above with your actual Amazon Associates tracking ID (found in your Associates dashboard). That&#39;s it &mdash; every click that leads to a purchase earns you a commission, even if they buy something completely different!
+  </p>
 </div>
 
-<div class="newsletter">
-  <h3>Join Top Pick USA</h3>
-  <p style="margin:15px 0; color:#777;">Get weekly buying guides and exclusive recommendations.</p>
-  <input type="email" placeholder="Your email">
-  <button>Subscribe</button>
+<!-- FOOTER -->
+
+<div class="fh-footer">
+  <div>&#169; 2026 FitHome Reviews &middot; For entertainment &amp; informational purposes</div>
+  <div>Amazon Associates participant</div>
 </div>
 
-<footer>
-© 2026 Top Pick USA · Independent Product Reviews · Affiliate Disclosure Included
-</footer>
+<!-- VISITOR COUNTER SCRIPT -->
 
-<script>
-document.querySelectorAll('.purchase-count').forEach(el => {
-  const base = parseInt(el.getAttribute('data-base'));
-  const variation = Math.floor(Math.random() * 50);
-  const finalNumber = base + variation;
-  el.querySelector('.number').textContent = finalNumber;
-});
+<script type='text/javascript'>
+//<![CDATA[
+  function fhGetBase() {
+    var seed = Math.floor(Date.now() / (90 * 60 * 1000));
+    var r = ((seed * 1664525 + 1013904223) & 0xffffffff) >>> 0;
+    return 80 + (r % 140);
+  }
+
+  function fhGetReal() {
+    try {
+      var key = 'fh_vis';
+      var win = 90 * 60 * 1000;
+      var now = Date.now();
+      var d = JSON.parse(localStorage.getItem(key) || '{"v":[],"id":null}');
+      if (!d.id) d.id = now + '_' + Math.random().toString(36).substr(2, 6);
+      d.v = d.v.filter(function(x) { return now - x.t < win; });
+      var i = d.v.findIndex(function(x) { return x.id === d.id; });
+      if (i >= 0) { d.v[i].t = now; } else { d.v.push({ id: d.id, t: now }); }
+      localStorage.setItem(key, JSON.stringify(d));
+      return d.v.length;
+    } catch(e) { return 1; }
+  }
+
+  function fhSetCount(n) {
+    var el = document.getElementById('fh-visitor-count');
+    if (el) el.textContent = n;
+  }
+
+  function fhUpdate() {
+    fhSetCount(fhGetBase() + fhGetReal());
+  }
+
+  fhUpdate();
+  setInterval(fhUpdate, 30000);
+
+  (function fhFlicker() {
+    var wobble = Math.floor(Math.random() * 7) - 3;
+    fhSetCount(Math.max(fhGetBase() + fhGetReal() + wobble, 1));
+    setTimeout(fhFlicker, 8000 + Math.random() * 8000);
+  })();
+//]]>
 </script>
 
 </body>
